@@ -1,0 +1,21 @@
+name: Local Assistant
+version: 1.0.0
+schema: v1
+models:
+  - name: Distill-Llama-70B
+    provider: openai
+    model: EMPTY
+    apiBase: http://localhost:8000/v1/
+    roles:
+      - chat
+      - edit
+      - apply
+
+context:
+  - provider: code
+  - provider: docs
+  - provider: diff
+  - provider: terminal
+  - provider: problems
+  - provider: folder
+  - provider: codebase
