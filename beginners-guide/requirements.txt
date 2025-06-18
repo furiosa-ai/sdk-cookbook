@@ -1,0 +1,3 @@
+furiosa_llm==2025.2
+langchain
+langchain_community
