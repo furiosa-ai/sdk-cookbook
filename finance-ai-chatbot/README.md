@@ -23,8 +23,7 @@ If you have access to the FurisoaAI LLM API endpoint or a dedicated RNGD server,
 - LLM:
    - [furiosa-ai/Llama-3.1-8B-Instruct](https://huggingface.co/furiosa-ai/Llama-3.1-8B-Instruct) 
    - [furiosa-ai/DeepSeek-R1-Distill-Llama-8B](https://huggingface.co/furiosa-ai/DeepSeek-R1-Distill-Llama-8B)
-- AI Framework: 
-   - LangChain 0.3.25
+
 
  
 ## Usage

@@ -14,8 +14,8 @@ Interactive demo application built with Streamlit and the OpenAI API. Upload Pyt
 
 ### Requirements
 
-- Python 3.12 or later
-- OpenAI API key or OpenAI Compatible Server
+- FuriosaSDK 2025.02
+- RNGD server or Endpoint API
 
 ### Steps
 
@@ -28,29 +28,20 @@ cd unit-test-generator
 pip install -r requirements.txt
 ```
 
-Or install in editable mode:
-
-```bash
-pip install -e .
-```
-
 ## Configuration
 
-- Set your OpenAI API key:
-  ```bash
-  export OPENAI_API_KEY="sk-..."
-  ```
-- (Optional) Override the OpenAI API base URL:
-  ```bash
-  export OPENAI_API_BASE="https://your-custom-endpoint"
-  ```
+- LLM : [furiosa-ai/Llama-3.1-8B-Instruct](https://huggingface.co/furiosa-ai/Llama-3.1-8B-Instruct)
 
 ## Usage
 
-Launch the Streamlit app:
+```
+python run app.py
+```
+
+Or Launch the Streamlit app:
 
 ```bash
-streamlit run app.py
+streamlit run web_app.py
 ```
 
 In the sidebar, enter your API key (and any optional settings). Then upload Python `.py` files to generate explanations and tests. Use **Generate Explanation & Tests** for a one-step process or generate explanation and tests separately. Refine tests by entering additional prompts and clicking **Apply Fix**.
