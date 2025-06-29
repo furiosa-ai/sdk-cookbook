@@ -4,9 +4,16 @@
 # FuriosaAI SDK CookBook
 A collection of open-source resources and tutorials to help developers seamlessly integrate AI-driven solutions using FuriosaAI SDK and development tools. Let's explore how AI engineers and researchers can build their own applications using the FuriosaAI SDK and RNGDs.
 
+## Target audience
+This cookbook is for:
+- AI engineers: Engineers seeking a quickstart to build production-grade AI applications using FuriosaAI SDKs.
+- AI researchers: Researchers aiming to rapidly prototype AI workflows using FuriosaAI SDKs.
+- AI solution architects: Solution architects looking to efficiently design and implement AI use cases using FuriosaAI SDKs.
+
+
 ## Prerequisites
 
-If you have access to the FurisoaAI LLM API endpoint or a dedicated RNGD server, the only step you need to take before beginning the SDK cookbook is installing the necessary prerequisites for the FuriosaAI SDK stack. Please refer to the provided page to choose and set up your preferred version of the FuriosaAI SDK. Currently, this SDK cookbook is based on FuriosaAI SDK version 2025.02.
+If you have access to the FurisoaAI LLM API endpoint or a dedicated RNGD server, the only step you need to take before beginning the SDK cookbook is installing the necessary prerequisites for the FuriosaAI SDK stack. Please refer to the provided page to choose and set up your preferred version of the FuriosaAI SDK. Currently, this SDK cookbook is based on FuriosaAI SDK version 2025.3.0
 - [Install Prerequisites for FuriosaAI SDK](https://developer.furiosa.ai/latest/en/getting_started/prerequisites.html)
 - [Navigate FuriosaSDK Documents](https://developer.furiosa.ai/latest/en/index.html)
   
@@ -17,7 +24,7 @@ This guide provides an introduction to using the FuriosaAI SDK for large languag
 - [Steps for Implementing Tool Calling with FuriosaAI SDK to Build AI Agent](https://github.com/furiosa-ai/sdk-cookbook/blob/main/beginners-guide/use_tool_calling.ipynb)
 
 ## Usecase
-| Name | Description | Framework / Intrgration                  | Use-case |
+| Name | Description | Framework / Integration                  | Use-case |
 | --------- | --- | --- | --- |
 | [Unit Test Generator](https://github.com/furiosa-ai/sdk-cookbook/tree/main/unit-test-generator) | LLM-based Code Explanation & Unit Test Generator | - | Text Generation |
 | [Weekly News Reporter](https://github.com/furiosa-ai/sdk-cookbook/tree/main/weekly-news-reporter) | LLM-based Weekly News Retriever & Summarizer | LangGraph  | Multi Agent |
@@ -42,6 +49,7 @@ This guide provides an introduction to using the FuriosaAI SDK for large languag
 <!--| LiteLLM | | -->
 <!--| SmolAgents | | -->
 <!--| BeeAI | | -->
+
 
 ## How-to-Start
 We recommend installing dependencies individually for each recipe in the cookbook. Every recipe has its own `README.md` and `requirements.txt`.

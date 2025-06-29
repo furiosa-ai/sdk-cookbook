@@ -11,7 +11,7 @@ import re
 import subprocess
 import openai
 
-model = 'llama3.1-8b'
+model = 'Qwen2.5-Coder-32B-Instruct'
 
 def get_sample_code():
     print('Using Sample calculator code based on Recursive descent parser')
@@ -64,13 +64,13 @@ def start_furiosa_llm_servers():
         [
             "furiosa-llm",
             "serve",
-            "furiosa-ai/Llama-3.1-8B-Instruct",
+            "furiosa-ai/Qwen2.5-Coder-32B-Instruct",
             "--host",
             "localhost",
             "--port",
             "8000",
             "--devices",
-            "npu:0",
+            "npu:2,npu:3",
         ]
     )
     return server
@@ -78,7 +78,7 @@ def start_furiosa_llm_servers():
 if __name__ == "__main__":
 
     server = start_furiosa_llm_servers()
-    time.sleep(50)
+    time.sleep(100)
     openai.base_url = 'http://localhost:8000/v1/'
     openai.api_key = 'EMPTY'
     try:

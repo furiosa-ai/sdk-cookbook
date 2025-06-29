@@ -2,7 +2,7 @@ aiohttp
 aiosignal
 datasets
 fastapi
-furiosa-llm==2025.2.0
+furiosa-llm==2025.3.0
 httpx==0.28.1
 langchain
 langchain-core

@@ -21,7 +21,7 @@ def config():
     # model
     embedding_model_name = "text-embedding-ada-002"
     embedding_model_context_length = 1536
-    llm = "furiosa-ai/Llama-3.1-8B-Instruct"
+    llm = "furiosa-ai/EXAONE-3.5-32B-Instruct"
     llm_context_length = 12288
     # retreival
     num_chunks = 5
@@ -35,6 +35,8 @@ def config():
     max_new_tokens = 1024  # for output (max_new_tokens of transformers)
     temperature = 1
 
+    # If debug is True, limit the number of chunks to 100 for testing
+    debug = True
 
 @ex.named_config
 def PytorchDataset():

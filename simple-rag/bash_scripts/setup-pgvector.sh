@@ -17,7 +17,7 @@ cd pgvector
 make PG_CONFIG=/usr/lib/postgresql/17/bin/pg_config 
 sudo make install
 
-# Activate pgvector and the database
+# # Activate pgvector and the database
 echo 'ray ALL=(ALL:ALL) NOPASSWD:ALL' | sudo tee /etc/sudoers.d/ray
 sudo service postgresql start
 # pragma: allowlist nextline secret

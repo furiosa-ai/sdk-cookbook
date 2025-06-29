@@ -2,10 +2,10 @@ name: Local Assistant
 version: 1.0.0
 schema: v1
 models:
-  - name: Distill-Llama-70B
+  - name: furiosa-ai/Qwen2.5-Coder-32B-Instruct
     provider: openai
     model: EMPTY
-    apiBase: http://localhost:8000/v1/
+    apiBase: http://localhost:8889/v1/
     roles:
       - chat
       - edit

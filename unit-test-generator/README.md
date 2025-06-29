@@ -14,7 +14,7 @@ Interactive demo application built with Streamlit and the OpenAI API. Upload Pyt
 
 ### Requirements
 
-- FuriosaSDK 2025.02
+- FuriosaSDK 2025.3.0
 - RNGD server or Endpoint API
 
 ### Steps
@@ -30,15 +30,20 @@ pip install -r requirements.txt
 
 ## Configuration
 
-- LLM : [furiosa-ai/Llama-3.1-8B-Instruct](https://huggingface.co/furiosa-ai/Llama-3.1-8B-Instruct)
+- LLM : [furiosa-ai/Qwen2.5-Coder-32B-Instruct](https://huggingface.co/furiosa-ai/Qwen2.5-Coder-32B-Instruct)
 
 ## Usage
 
 ```
-python run app.py
+python app.py
 ```
 
-Or Launch the Streamlit app:
+Or Launch the Streamlit app with launching RNGD server:
+
+```
+furiosa-llm serve furiosa-ai/Qwen2.5-Coder-32B-Instruct \
+    --host localhost --port 8000 --devices npu:2,npu:3
+```
 
 ```bash
 streamlit run web_app.py

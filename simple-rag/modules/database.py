@@ -64,7 +64,6 @@ def index_db(embedded_chunks, _config, batch_size=100):
     subprocess.run(f'chmod +x {save_index_sh}', shell=True, check=True)
 
 
-
 def get_embedded_chunks(_config, batch_size=100):
     docs_dir = get_docs_dir(_config)
     chunk_size = _config["chunk_size"]
@@ -90,11 +89,12 @@ def get_embedded_chunks(_config, batch_size=100):
     if chunks:
         print("Sample chunk:", chunks[0])
 
+    ###### debug
+    if _config['debug'] == True:
+        print("Debug mode: limiting chunks to 100 for testing")
+        chunks = chunks[:100]
     # embed chunks 
     embedder = EmbedChunks(model_name=embedding_model_name)
-    # for debug 
-    chunks = chunks[:10]
-    
     embedded_chunks = [embedder(chunk) for chunk in chunks]
     
     return embedded_chunks

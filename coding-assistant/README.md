@@ -1,7 +1,6 @@
 
-# Furiosa LLM based Coding Assistant (Continue Integration Guide)
-
-This document describes how to use [Continue](https://continue.dev) with Furiosa LLM API. It enables natural language-based code completion, refactoring, and explanation within the VS Code environment.
+# NPU Accelerated Coding Assistant (Continue Integration Guide)
+You might want to try using the NPU-accelerated Code Assistant in VS Code. In this document, we will explore how to use [Continue](https://continue.dev) with RNGD, FuriosaAI’s flagship AI accelerator, and the FuriosaAI SDK, an AI serving framework. This setup enables natural language‑based code completion, refactoring, and explanation within the VS Code environment. 
 
 ## 1. Overview
 
@@ -16,20 +15,30 @@ These modes allow for interactive code understanding, transformation, and assist
 
 For detailed usage, see the [Continue Documentation](https://docs.continue.dev/).
 
-## 2. Prerequistes
 
+
+## 2. Set Environments 
+
+### Requirements
+- RNGD server or Endpoint API
+- FuriosaSDK 2025.3.0.
+
+## Setup
 - Install the `Continue` extension from the VS Code Marketplace.
-- Run Furiosa LLM Server
+- Choose which model to use at [FuriosaAI Huggingface Hub](https://huggingface.co/furiosa-ai/models) and Run Furiosa LLM Server (we'll use [Qwen2.5-Coder-32B-Instruct](https://huggingface.co/furiosa-ai/Qwen2.5-Coder-32B-Instruct))
 
 ```
-furiosa-llm serve furiosa-ai/DeepSeek-R1-Distill-Llama-70B --enable-reasoning --reasoning-parser deepseek_r1
+furiosa-llm serve furiosa-ai/Qwen2.5-Coder-32B-Instruct --devices "npu:0,npu:1" --port 8889
 ```
 
 This command will runs an OpenAI compatible server with Chat API and Completions API endpoints.
 
 ## 3. Connecting Continue to the Furiosa LLM Server
 
-You can provide endpoints to Continue by changing Continue's `config.yaml` file.
+You can configure endpoints for Continue by modifying its `config.yaml` file with the FuriosaAI server information.
+On the Continue page, click the settings icon to access and edit the `config.yaml` file with the FuriosaAI server information. 
+![alt text](image.png)
+
 
 ### config.yaml
 
@@ -38,10 +47,10 @@ name: Local Assistant
 version: 1.0.0
 schema: v1
 models:
-  - name: Distill-Llama-70B
+  - name: furiosa-ai/Qwen2.5-Coder-32B-Instruct
     provider: openai
     model: EMPTY
-    apiBase: http://localhost:8000/v1/
+    apiBase: http://localhost:8889/v1/
     roles:
       - chat
       - edit
@@ -56,7 +65,6 @@ context:
   - provider: folder
   - provider: codebase
 ```
-
 
 ## 4. Using Continue
 Once Continue is connected to the Furiosa LLM server, you can begin using it directly within your development workflow. Here are practical ways to utilize its functionality:
@@ -87,4 +95,4 @@ Alternatively, you can open a blank file, press Ctrl+I, and describe the idea yo
 
 ## 5. References
 
-- Official Continue Documente: [https://docs.continue.dev](https://docs.continue.dev)
+- Official Continue Documentation: [https://docs.continue.dev](https://docs.continue.dev)

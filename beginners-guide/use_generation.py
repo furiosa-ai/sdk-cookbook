@@ -7,7 +7,7 @@ import time
 llm = LLM.load_artifact("furiosa-ai/Llama-3.1-8B-Instruct-FP8", devices="npu:0")
 
 # You can specify various parameters for text generation
-sampling_params = SamplingParams(min_tokens=10, top_p=0.3, top_k=100)
+sampling_params = SamplingParams(max_tokens=100, top_p=0.3, top_k=100)
 
 
 
@@ -54,3 +54,4 @@ async def async_single_batch_inference():
 asyncio.run(async_single_batch_inference())
 
 
+llm.__del__() 

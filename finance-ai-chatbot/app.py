@@ -44,7 +44,7 @@ def start_furiosa_llm_servers():
             "--port",
             "8889",
             "--devices",
-            "npu:0",
+            "npu:2",
         ]
     )
 
@@ -61,7 +61,7 @@ def start_furiosa_llm_servers():
             "--port",
             "8888",
             "--devices",
-            "npu:1",
+            "npu:3",
         ]
     )
     return server1, server2

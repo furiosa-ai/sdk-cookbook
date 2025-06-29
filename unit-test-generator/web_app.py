@@ -25,7 +25,7 @@ def main():
     # Model to use for completions
     model = st.sidebar.text_input(
         "Model",
-        value=os.getenv("OPENAI_MODEL", "Llama-3.1-8B-Instruct"),
+        value=os.getenv("OPENAI_MODEL", "Qwen2.5-Coder-32B-Instruct"),
         help="Enter the model name, e.g. 'gpt-3.5-turbo' or 'gpt-4'.",
     )
 
@@ -256,13 +256,13 @@ if __name__ == "__main__":
     # start the furiosa-llm server
 
     """
-    furiosa-llm serve furiosa-ai/Llama-3.1-8B-Instruct \
-        --host localhost --port 8000 --devices npu:0
+    furiosa-llm serve furiosa-ai/Qwen2.5-Coder-32B-Instruct \
+        --host localhost --port 8000 --devices npu:2,npu:3
         
     """
 
     # set configs 
-    os.environ["OPENAI_API_BASE"] = "http://localhost:8000/v1/"
+    os.environ["OPENAI_API_BASE"] = "http://localhost:8888/v1/"
     os.environ["OPENAI_API_KEY"] = "123123"
 
     main()

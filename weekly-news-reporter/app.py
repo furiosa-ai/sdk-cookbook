@@ -16,7 +16,7 @@ from langgraph.graph import StateGraph
 
 # Initialize API clients
 llm = ChatOpenAI(
-    model="llama3.1-8b.bf16",
+    model="furiosa-ai/Llama-3.1-8B-Instruct",
     temperature=0.1,
     base_url = "http://localhost:8000/v1/",
     openai_api_key = "EMPTY",

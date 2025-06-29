@@ -33,10 +33,12 @@ def main(_config):
     agent = get_query_agent(_config)
 
     # # Run RAG
-    query = "How to import torch.nn?"
+    query = "torch.nn 을 어떻게 이용하나요?"
     result = agent(query=query, stream=False)
     print("==" * 20)
     print("question:", result["question"])
+    
+    #print("sources:", result)
     print("answer:", result["answer"])
 
     # print(json.dumps(result, indent=2))
