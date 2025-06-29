@@ -17,7 +17,7 @@ This guide provides an introduction to using the FuriosaAI SDK for large languag
 - [Steps for Implementing Tool Calling with FuriosaAI SDK to Build AI Agent](https://github.com/furiosa-ai/sdk-cookbook/blob/main/beginners-guide/use_tool_calling.ipynb)
 
 ## Usecase
-| Name | Description | Framework / Intrgration                  | Use-case |
+| Name | Description | Framework / Integration                  | Use-case |
 | --------- | --- | --- | --- |
 | [Unit Test Generator](https://github.com/furiosa-ai/sdk-cookbook/tree/main/unit-test-generator) | LLM-based Code Explanation & Unit Test Generator | - | Text Generation |
 | [Weekly News Reporter](https://github.com/furiosa-ai/sdk-cookbook/tree/main/weekly-news-reporter) | LLM-based Weekly News Retriever & Summarizer | LangGraph  | Multi Agent |
