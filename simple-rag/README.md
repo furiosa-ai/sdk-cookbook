@@ -27,8 +27,8 @@ If you have access to the FurisoaAI LLM API endpoint or a dedicated RNGD server,
    bash bash_scripts/setup-pgvector.sh
    
    # OPENAI_API for embedding model
-   OPENAI_API_BASE="https://api.openai.com/v1"
-   OPENAI_API_KEY=<your-openai-api-key>
+   export OPENAI_API_BASE="https://api.openai.com/v1"
+   export OPENAI_API_KEY=<your-openai-api-key>
 
 ```
 
