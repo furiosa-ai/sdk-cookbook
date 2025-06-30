@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ## Usage
 
 ```
-python run app.py
+python app.py
 ```
 
 Or Launch the Streamlit app:
