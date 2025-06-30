@@ -22,7 +22,7 @@ For detailed usage, see the [Continue Documentation](https://docs.continue.dev/)
 - Run Furiosa LLM Server
 
 ```
-furiosa-llm serve furiosa-ai/DeepSeek-R1-Distill-Llama-70B --enable-reasoning --reasoning-parser deepseek_r1
+furiosa-llm serve furiosa-ai/DeepSeek-R1-Distill-Llama-8B --enable-reasoning --reasoning-parser deepseek_r1
 ```
 
 This command will runs an OpenAI compatible server with Chat API and Completions API endpoints.
@@ -38,7 +38,7 @@ name: Local Assistant
 version: 1.0.0
 schema: v1
 models:
-  - name: Distill-Llama-70B
+  - name: Distill-Llama-8B
     provider: openai
     model: EMPTY
     apiBase: http://localhost:8000/v1/
