@@ -4,6 +4,13 @@
 # FuriosaAI SDK CookBook
 A collection of open-source resources and tutorials to help developers seamlessly integrate AI-driven solutions using FuriosaAI SDK and development tools. Let's explore how AI engineers and researchers can build their own applications using the FuriosaAI SDK and RNGDs.
 
+## Target audience
+This cookbook is for:
+- AI engineers: Engineers wanting a quickstart to using FuriosaAI SDKs to build an AI product.
+- AI researchers: Researchers wanting a quickstart to using FuriosaAI SDKs to build an AI prototype.
+- AI solution architects: Solution architects wanting to a quickstart to using FuriosaAI SDKs to build an AI usecase.
+
+
 ## Prerequisites
 
 If you have access to the FurisoaAI LLM API endpoint or a dedicated RNGD server, the only step you need to take before beginning the SDK cookbook is installing the necessary prerequisites for the FuriosaAI SDK stack. Please refer to the provided page to choose and set up your preferred version of the FuriosaAI SDK. Currently, this SDK cookbook is based on FuriosaAI SDK version 2025.02.
@@ -43,11 +50,6 @@ This guide provides an introduction to using the FuriosaAI SDK for large languag
 <!--| SmolAgents | | -->
 <!--| BeeAI | | -->
 
-## Target audience
-This cookbook is for:
-- AI engineers: Engineers wanting a quickstart to using FuriosaAI SDKs to build an AI product.
-- AI researchers: Researchers wanting a quickstart to using FuriosaAI SDKs to build an AI prototype.
-- AI solution architects: Solution architects wanting to a quickstart to using FuriosaAI SDKs to build an AI usecase.
 
 ## How-to-Start
 We recommend installing dependencies individually for each recipe in the cookbook. Every recipe has its own `README.md` and `requirements.txt`.
