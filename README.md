@@ -43,6 +43,11 @@ This guide provides an introduction to using the FuriosaAI SDK for large languag
 <!--| SmolAgents | | -->
 <!--| BeeAI | | -->
 
+## Target audience
+This cookbook is for
+AI engineers: Engineers wanting a quickstart to using FuriosaAI SDKs to build an AI solution.
+
+
 ## How-to-Start
 We recommend installing dependencies individually for each recipe in the cookbook. Every recipe has its own `README.md` and `requirements.txt`.
 To get started with a recipe for building basic applications:
