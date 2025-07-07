@@ -6,9 +6,9 @@ A collection of open-source resources and tutorials to help developers seamlessl
 
 ## Target audience
 This cookbook is for:
-- AI engineers: Engineers wanting a quickstart to using FuriosaAI SDKs to build an AI product.
-- AI researchers: Researchers wanting a quickstart to using FuriosaAI SDKs to build an AI prototype.
-- AI solution architects: Solution architects wanting to a quickstart to using FuriosaAI SDKs to build an AI usecase.
+- AI engineers: Engineers seeking a quickstart to build production-grade AI applications using FuriosaAI SDKs.
+- AI researchers: Researchers aiming to rapidly prototype AI workflows using FuriosaAI SDKs.
+- AI solution architects: Solution architects looking to efficiently design and implement AI use cases using FuriosaAI SDKs.
 
 
 ## Prerequisites
