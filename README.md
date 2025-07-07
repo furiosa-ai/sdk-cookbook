@@ -44,9 +44,10 @@ This guide provides an introduction to using the FuriosaAI SDK for large languag
 <!--| BeeAI | | -->
 
 ## Target audience
-This cookbook is for
-AI engineers: Engineers wanting a quickstart to using FuriosaAI SDKs to build an AI solution.
-
+This cookbook is for:
+- AI engineers: Engineers wanting a quickstart to using FuriosaAI SDKs to build an AI product.
+- AI researchers: Researchers wanting a quickstart to using FuriosaAI SDKs to build an AI prototype.
+- AI solution architects: Solution architects wanting to a quickstart to using FuriosaAI SDKs to build an AI usecase.
 
 ## How-to-Start
 We recommend installing dependencies individually for each recipe in the cookbook. Every recipe has its own `README.md` and `requirements.txt`.
