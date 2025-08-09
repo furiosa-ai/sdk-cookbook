@@ -1,5 +1,7 @@
 
-<img src="https://github.com/user-attachments/assets/8e05d22f-af4f-47ca-b901-ca0454d8aae9" width="100"/>
+<img src=https://github.com/furiosa-ai/sdk-cookbook/blob/main/docs/images/icon.png width="100"/>
+
+
 
 # FuriosaAI SDK CookBook
 A collection of open-source resources and tutorials to help developers seamlessly integrate AI-driven solutions using FuriosaAI SDK and development tools. Let's explore how AI engineers and researchers can build their own applications using the FuriosaAI SDK and RNGDs.
