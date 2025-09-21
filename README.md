@@ -3,27 +3,27 @@
 
 
 
-# FuriosaAI SDK CookBook
-A collection of open-source resources and tutorials to help developers seamlessly integrate AI-driven solutions using FuriosaAI SDK and development tools. Let's explore how AI engineers and researchers can build their own applications using the FuriosaAI SDK and RNGDs.
+# Furiosa SDK CookBook
+A collection of open-source resources and tutorials to help developers seamlessly integrate AI-driven solutions using FuriosaAI SDK and development tools. Let's explore how AI engineers and researchers can build their own applications using the Furiosa SDK and RNGDs.
 
 ## Target audience
 This cookbook is for:
 - AI engineers: Engineers seeking a quickstart to build production-grade AI applications using FuriosaAI SDKs.
-- AI researchers: Researchers aiming to rapidly prototype AI workflows using FuriosaAI SDKs.
-- AI solution architects: Solution architects looking to efficiently design and implement AI use cases using FuriosaAI SDKs.
+- AI researchers: Researchers aiming to rapidly prototype AI workflows using Furiosa SDKs.
+- AI solution architects: Solution architects looking to efficiently design and implement AI use cases using Furiosa SDKs.
 
 
 ## Prerequisites
 
-If you have access to the FurisoaAI LLM API endpoint or a dedicated RNGD server, the only step you need to take before beginning the SDK cookbook is installing the necessary prerequisites for the FuriosaAI SDK stack. Please refer to the provided page to choose and set up your preferred version of the FuriosaAI SDK. Currently, this SDK cookbook is based on FuriosaAI SDK version 2025.3.0
+If you have access to the FurisoaAI LLM API endpoint or a dedicated RNGD server, the only step you need to take before beginning the SDK cookbook is installing the necessary prerequisites for the Furiosa SDK stack. Please refer to the provided page to choose and set up your preferred version of the FuriosaAI SDK. Currently, this SDK cookbook is based on Furiosa SDK version 2025.3.0
 - [Install Prerequisites for FuriosaAI SDK](https://developer.furiosa.ai/latest/en/getting_started/prerequisites.html)
 - [Navigate FuriosaSDK Documents](https://developer.furiosa.ai/latest/en/index.html)
   
 
 ## Beginner's guide 
-This guide provides an introduction to using the FuriosaAI SDK for large language model (LLM) applications. The guide is intended for users new to the FuriosaAI SDK and covers the basic setup and usage required to get started. It includes:
-- [Instruction for Generating LLM Inference Using FuriosaAI SDK](https://github.com/furiosa-ai/sdk-cookbook/blob/main/beginners-guide/use_generation.ipynb)
-- [Steps for Implementing Tool Calling with FuriosaAI SDK to Build AI Agent](https://github.com/furiosa-ai/sdk-cookbook/blob/main/beginners-guide/use_tool_calling.ipynb)
+This guide provides an introduction to using the Furiosa SDK for large language model (LLM) applications. The guide is intended for users new to the Furiosa SDK and covers the basic setup and usage required to get started. It includes:
+- [Instruction for Generating LLM Inference Using Furiosa SDK](https://github.com/furiosa-ai/sdk-cookbook/blob/main/beginners-guide/use_generation.ipynb)
+- [Steps for Implementing Tool Calling with Furiosa SDK to Build AI Agent](https://github.com/furiosa-ai/sdk-cookbook/blob/main/beginners-guide/use_tool_calling.ipynb)
 
 ## Usecase
 | Name | Description | Framework / Integration                  | Use-case |
