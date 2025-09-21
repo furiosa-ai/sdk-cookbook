@@ -65,7 +65,7 @@ To get started with a recipe for building basic applications:
 
 
 ## Support
-Please note that the use-case examples in the FuriosaAI SDK CookBook are provided for guide purposes only and are not intended for production use. If you have questions or would like to discuss how to develop your own AI application using the FuriosaAI SDK, feel free to open a pull request or submit an issue. For broader discussions or support of FuriosaAI SDK, we encourage you to participate in the open forum linked below.
+Please note that the use-case examples in the Furiosa SDK CookBook are provided for guide purposes only and are not intended for production use. If you have questions or would like to discuss how to develop your own AI application using the Furiosa SDK, feel free to open a pull request or submit an issue. For broader discussions or support of Furiosa SDK, we encourage you to participate in the open forum linked below.
   - [FuriosaAI Forum](https://forums.furiosa.ai/)
 
 ## License
