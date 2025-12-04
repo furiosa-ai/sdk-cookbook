@@ -1,6 +1,9 @@
 # Simple RAG
 This recipe will guide you through the process of building a Retrieval-Augmented Generation (RAG) system. It starts with scraping documents from the web and proceeds to creating a vector database. Finally, it covers generating answers using a large language model (LLM) based on documents retrieved in response to a user question.
 
+This recipe is the foundation for the AI Customer Support Chatbot with RAG project, which adapts it to index Furiosa docs/blog/GitHub content and answer conceptual questions about Furiosa with contextual responses. You can explore that derived implementation here: 
+- [AI Customer Support Chatbot with RAG](https://github.com/juhui-furiosa/simple-rag)
+
 ## Prerequisites
 If you have access to the FurisoaAI LLM API endpoint or a dedicated RNGD server, the only step you need to take before beginning the SDK cookbook is installing the necessary prerequisites for the FuriosaAI SDK stack. Please refer to the provided page to choose and set up your preferred version of the FuriosaAI SDK. Currently, this SDK cookbook is based on FuriosaAI SDK version 2025.3.0.
 - [Install Prerequisites for FuriosaAI SDK](https://developer.furiosa.ai/latest/en/getting_started/prerequisites.html)
